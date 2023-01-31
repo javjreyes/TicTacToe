@@ -27,7 +27,9 @@
     line-height: 100px;
     text-align: center;
     font-size: 75px;
-    color: #FFAA5A
+    color: #FFAA5A;
+
+    cursor:pointer;
 }
 
 #gameControls{
@@ -44,4 +46,5 @@
 #gameControls button:hover{
     color: white;
     background-color: #8b3851;
+    cursor: pointer;
 }
