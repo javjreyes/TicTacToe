@@ -1,0 +1,23 @@
+
+#gameGrid{
+    display:grid;
+    grid: 100px 100px 100px/100px 100px 100px;
+    gap: 5px;
+
+    width: 310px;
+    padding:5px;
+    background-color: grey;
+
+    border-radius: 10px;
+}
+
+#gameGrid div{
+    background-color: blue;
+
+    border-radius: 10px;
+
+    line-height: 100px;
+    text-align: center;
+    font-size: 75px;
+    color: white
+}
