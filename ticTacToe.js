@@ -15,6 +15,7 @@ const ticTacToe = (() =>{
             whosTurn="player1";
         }
         cellChoice.innerText=choice;
+        cellChoice.onclick=""
 
     }
     return{
