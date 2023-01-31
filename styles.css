@@ -1,23 +1,31 @@
 
+#container{
+    display: grid;
+    justify-items: center;
+}
+
 #gameGrid{
     display:grid;
-    grid: 100px 100px 100px/100px 100px 100px;
+    grid: repeat(3, 100px)/repeat(3, 100px);
     gap: 5px;
+
+    /*margin-left: auto;
+    margin-right: auto;*/
 
     width: 310px;
     padding:5px;
-    background-color: grey;
+    background-color: #3943B7;
 
     border-radius: 10px;
 }
 
 #gameGrid div{
-    background-color: blue;
+    background-color: #6F9CEB;
 
     border-radius: 10px;
 
     line-height: 100px;
     text-align: center;
     font-size: 75px;
-    color: white
+    color: #FFAA5A
 }
