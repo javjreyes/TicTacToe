@@ -29,3 +29,19 @@
     font-size: 75px;
     color: #FFAA5A
 }
+
+#gameControls{
+    padding:10px;
+}
+#gameControls button{
+    font-weight: bold;
+    background-color: #FF6392;
+
+    border-radius: 10px;
+    padding: 7px;
+    margin: 3px;
+}
+#gameControls button:hover{
+    color: white;
+    background-color: #8b3851;
+}
