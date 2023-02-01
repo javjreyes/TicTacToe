@@ -4,6 +4,29 @@
     justify-items: center;
 }
 
+
+#scoreBoard{
+    background-color: aquamarine;
+
+    border-radius: 15px;
+    border: 4px solid #3943B7;
+
+    display: grid;
+    grid: 50px 50px/ 200px 200px;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    margin: 30px;
+    padding: 5px;
+}
+#scoreBoard div{
+    text-align: center;
+
+    padding: 5px;
+}
+
+
 #gameGrid{
     display:grid;
     grid: repeat(3, 100px)/repeat(3, 100px);
