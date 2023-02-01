@@ -5,6 +5,12 @@
     font-family: Arial, Helvetica, sans-serif;;
 }
 
+#gameName{
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px #FF6392;
+    font-weight: bolder;
+    font-size: 3em;
+}
 
 #scoreBoard{
     background-color: aquamarine;
@@ -55,6 +61,10 @@
 
     cursor:pointer;
 }
+#gameGrid div:hover{
+    border: 2px solid #FFAA5A;
+}
+
 
 #gameControls{
     padding:10px;
