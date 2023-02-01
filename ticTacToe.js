@@ -31,7 +31,7 @@ const ticTacToe = (() =>{
 
         if(won){
             console.log(whosTurn+" wins")
-            endGame();
+            endGame(won);
         }
 
         if(whosTurn=="Player 1"){
@@ -73,7 +73,7 @@ const ticTacToe = (() =>{
         }
         if(win==false && turnTracker==9){
             //gameOver
-            endGame()
+            endGame(false)
             console.log("Game Over: Nine Turns");
         }
 
@@ -81,6 +81,8 @@ const ticTacToe = (() =>{
     }
 
     const newGame = () =>{
+        gameBoard=[[null, null, null],[null, null, null],[null, null, null]];
+
         let div = document.getElementById("firstCell");
 
         div.onclick= function(){ticTacToe.turn(this)}
@@ -93,10 +95,30 @@ const ticTacToe = (() =>{
             div.innerText="";
         }
         whosTurn="Player 1";
+        turnTracker=0;
     }
 
-    const endGame = () =>{
-        
+    const endGame = won =>{
+        if(won){
+            if(whosTurn=="Player 1"){
+                player1Score++;
+                document.getElementById("playerOneScore").innerText=player1Score;
+            }
+            else{
+                player2Score++;
+                document.getElementById("playerTwoScore").innerText=player2Score;
+            }
+        }
+
+        let div = document.getElementById("firstCell");
+
+        div.onclick= "";
+
+        for(i=0; i<16; i++){
+            console.log({i});
+            div=div.nextSibling;
+            div.onclick= "";
+        }
     }
 
 
