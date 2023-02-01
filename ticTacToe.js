@@ -86,6 +86,7 @@ const ticTacToe = (() =>{
     const newGame = () =>{
         gameBoard=[[null, null, null],[null, null, null],[null, null, null]];
         document.getElementById("gameStatus").innerText="Player 1 Turn";
+        document.getElementById("gameNotice").style.display="none";
 
         let div = document.getElementById("firstCell");
 
@@ -112,6 +113,12 @@ const ticTacToe = (() =>{
                 player2Score++;
                 document.getElementById("playerTwoScore").innerText=player2Score;
             }
+            document.getElementById("gameNotice").innerText=whosTurn+" wins!";
+            document.getElementById("gameNotice").style.display="block";
+        }
+        else{
+            document.getElementById("gameNotice").innerText="Tie Game!";
+            document.getElementById("gameNotice").style.display="block";
         }
         
         document.getElementById("gameStatus").innerText="Game Over";
