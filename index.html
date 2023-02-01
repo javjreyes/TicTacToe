@@ -12,7 +12,12 @@
 </head>
 <body>
 <div id="container">
-    <div id="scoreBoard"></div>
+    <div id="scoreBoard">
+        <div>Player One</div>
+        <div>Player Two</div>
+        <div id="playerOneScore"></div>
+        <div id="playerTwoScore"></div>
+    </div>
     <div id="gameGrid">
         <div id="firstCell" onclick="ticTacToe.turn(this)" data-cellx="0" data-celly="0">0,0</div>
         <div onclick="ticTacToe.turn(this)" data-cellx="1" data-celly="0">1,0</div>
