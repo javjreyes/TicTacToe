@@ -31,6 +31,7 @@ const ticTacToe = (() =>{
 
         if(won){
             console.log(whosTurn+" wins")
+            endGame();
         }
 
         if(whosTurn=="Player 1"){
@@ -70,8 +71,9 @@ const ticTacToe = (() =>{
                 win=true;
             }
         }
-        if(turnTracker==9){
+        if(win==false && turnTracker==9){
             //gameOver
+            endGame()
             console.log("Game Over: Nine Turns");
         }
 
@@ -91,6 +93,10 @@ const ticTacToe = (() =>{
             div.innerText="";
         }
         whosTurn="Player 1";
+    }
+
+    const endGame = () =>{
+        
     }
 
 
