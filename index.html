@@ -12,13 +12,16 @@
 </head>
 <body>
 <div id="container">
+
     <h1>Tic Tac Toe</h1>
+
     <div id="scoreBoard">
         <div>Player One</div>
         <div>Player Two</div>
         <div id="playerOneScore">0</div>
         <div id="playerTwoScore">0</div>
     </div>
+
     <div id="gameGrid">
         <div id="firstCell" onclick="ticTacToe.turn(this)" data-cellx="0" data-celly="0"></div>
         <div onclick="ticTacToe.turn(this)" data-cellx="1" data-celly="0"></div>
@@ -30,12 +33,15 @@
         <div onclick="ticTacToe.turn(this)" data-cellx="1" data-celly="2"></div>
         <div onclick="ticTacToe.turn(this)" data-cellx="2" data-celly="2"></div>
     </div>
+
     <div id="gameControls">
         <button id="gameNewGame" onclick="ticTacToe.newGame()">New Game</button>
         <button id="gameReset" onclick="ticTacToe.resetGame()">Reset</button>
     </div>
 
     <div id="gameStatus">Player 1 Turn</div>
+
+    <div id="gameNotice">Game Over</div>
 </div>
 </body>
 </html>
