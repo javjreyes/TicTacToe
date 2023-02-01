@@ -86,5 +86,25 @@
     border: 4px solid #3943B7;
 
     font-size: 30px;
+}
+
+#gameNotice{
+    width:350px;
+    height: 100px;
+
+    text-align: center;
+    line-height:100px;
     
+    background-color: #FF6392;
+    
+    border-radius: 15px;
+    border: 4px solid;
+
+    font-size: 50px;
+
+    position: fixed;
+
+    top: 372px;
+
+    display: none;
 }
