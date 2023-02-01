@@ -121,8 +121,17 @@ const ticTacToe = (() =>{
         }
     }
 
+    const resetGame = () =>{
+        newGame();
+        player1Score=0;
+        player2Score=0;
+
+        document.getElementById('playerOneScore').innerText=player1Score;
+        document.getElementById("playerTwoScore").innerText=player2Score;
+    }
+
 
     return{
-        turn, newGame
+        turn, newGame, resetGame
     };
 })();
