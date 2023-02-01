@@ -4,6 +4,8 @@ const ticTacToe = (() =>{
     let turnTracker=0;
     let whosTurn="player1";
 
+    let gameBoard=[["","",""],["","",""],["","",""]];
+
     const turn = cellChoice => {
         let choice;
         if(whosTurn=="player1"){
@@ -15,7 +17,7 @@ const ticTacToe = (() =>{
             whosTurn="player1";
         }
         cellChoice.innerText=choice;
-        cellChoice.onclick=""
+        cellChoice.onclick="";
 
     }
     return{
