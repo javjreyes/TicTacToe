@@ -33,13 +33,16 @@ const ticTacToe = (() =>{
             console.log(whosTurn+" wins")
             endGame(won);
         }
-
-        if(whosTurn=="Player 1"){
-            whosTurn="Player 2";
-        }
         else{
-            whosTurn="Player 1";
+            if(whosTurn=="Player 1"){
+                whosTurn="Player 2";
+            }
+            else{
+                whosTurn="Player 1";
+            }
+            document.getElementById("gameStatus").innerText=whosTurn+" Turn";
         }
+        
 
     }
     
@@ -82,6 +85,7 @@ const ticTacToe = (() =>{
 
     const newGame = () =>{
         gameBoard=[[null, null, null],[null, null, null],[null, null, null]];
+        document.getElementById("gameStatus").innerText="Player 1 Turn";
 
         let div = document.getElementById("firstCell");
 
@@ -109,6 +113,9 @@ const ticTacToe = (() =>{
                 document.getElementById("playerTwoScore").innerText=player2Score;
             }
         }
+        
+        document.getElementById("gameStatus").innerText="Game Over";
+        
 
         let div = document.getElementById("firstCell");
 
