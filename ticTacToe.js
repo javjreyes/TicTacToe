@@ -2,13 +2,13 @@ const ticTacToe = (() =>{
     let player1Score=0;
     let player2Score=0;
     let turnTracker=0;
-    let whosTurn="player 1";
+    let whosTurn="Player 1";
 
     let gameBoard=[[null, null, null],[null, null, null],[null, null, null]];
 
     const turn = cellChoice => {
         let choice;
-        if(whosTurn=="player 1"){
+        if(whosTurn=="Player 1"){
             choice="X";
         }
         else{
@@ -33,11 +33,11 @@ const ticTacToe = (() =>{
             console.log(whosTurn+" wins")
         }
 
-        if(whosTurn=="player 1"){
-            whosTurn="player 2";
+        if(whosTurn=="Player 1"){
+            whosTurn="Player 2";
         }
         else{
-            whosTurn="player 1";
+            whosTurn="Player 1";
         }
 
     }
@@ -77,7 +77,24 @@ const ticTacToe = (() =>{
 
         return win;
     }
+
+    const newGame = () =>{
+        let div = document.getElementById("firstCell");
+
+        div.onclick= function(){ticTacToe.turn(this)}
+        div.innerText="";
+
+        for(i=0; i<16; i++){
+            console.log({i});
+            div=div.nextSibling;
+            div.onclick= function(){ticTacToe.turn(this)}
+            div.innerText="";
+        }
+        whosTurn="Player 1";
+    }
+
+
     return{
-        turn
+        turn, newGame
     };
 })();
