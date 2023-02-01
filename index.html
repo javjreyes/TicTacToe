@@ -14,7 +14,7 @@
 <div id="container">
     <div id="scoreBoard"></div>
     <div id="gameGrid">
-        <div onclick="ticTacToe.turn(this)" data-cellx="0" data-celly="0">0,0</div>
+        <div id="firstCell" onclick="ticTacToe.turn(this)" data-cellx="0" data-celly="0">0,0</div>
         <div onclick="ticTacToe.turn(this)" data-cellx="1" data-celly="0">1,0</div>
         <div onclick="ticTacToe.turn(this)" data-cellx="2" data-celly="0">2,0</div>
         <div onclick="ticTacToe.turn(this)" data-cellx="0" data-celly="1">0,1</div>
@@ -25,7 +25,7 @@
         <div onclick="ticTacToe.turn(this)" data-cellx="2" data-celly="2">2,2</div>
     </div>
     <div id="gameControls">
-        <button id="gameNewGame">New Game</button>
+        <button id="gameNewGame" onclick="ticTacToe.newGame()"">New Game</button>
         <button id="gameReset">Reset</button>
     </div>
 </div>
