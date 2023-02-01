@@ -14,15 +14,15 @@
 <div id="container">
     <div id="scoreBoard"></div>
     <div id="gameGrid">
-        <div>X</div>
-        <div></div>
-        <div>O</div>
-        <div></div>
-        <div></div>
-        <div>X</div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div onclick="ticTacToe.turn(this)" data-cellX="0" data-cellY="0">0,0</div>
+        <div onclick="ticTacToe.turn(this)" data-cellX="0" data-cellY="1">0,1</div>
+        <div onclick="ticTacToe.turn(this)" data-cellX="0" data-cellY="2">0,2</div>
+        <div onclick="ticTacToe.turn(this)" data-cellX="1" data-cellY="0">1,0</div>
+        <div onclick="ticTacToe.turn(this)" data-cellX="1" data-cellY="1">1,1</div>
+        <div onclick="ticTacToe.turn(this)" data-cellX="1" data-cellY="2">1,2</div>
+        <div onclick="ticTacToe.turn(this)" data-cellX="2" data-cellY="0">2,0</div>
+        <div onclick="ticTacToe.turn(this)" data-cellX="2" data-cellY="1">2,1</div>
+        <div onclick="ticTacToe.turn(this)" data-cellX="2" data-cellY="2">2,2</div>
     </div>
     <div id="gameControls">
         <button id="gameNewGame">New Game</button>
